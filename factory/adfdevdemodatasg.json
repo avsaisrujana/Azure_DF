@@ -1,0 +1,15 @@
+{
+	"name": "adfdevdemodatasg",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "90046e76-2f78-4b37-b335-0de43e836dff",
+		"tenantId": "a07ab25e-8ae7-4a3f-9073-5c941e6f521a"
+	}
+}
