@@ -12,7 +12,7 @@
 			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "srujana",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhODE5YTRlMi0yMmQzLTQzOWEtOGU5OC04Y2E2YmI4YTIwMjgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1ZGQzZTkyMC1jZjMxLTQzMmQtOTJmYS03ZmMwMjYyZWMwNzciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
