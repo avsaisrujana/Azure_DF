@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "Lookup_MAX_Value",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -13,14 +13,26 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_LKUP_MAX_VALUE",
+						"type": "DatasetReference"
+					}
+				}
 			},
 			{
-				"name": "If Condition1",
+				"name": "IF_NEW_RECORD_EXISTS",
+				"description": "Run Copy Activity if :\nLastLoadValue IS NULL then initiate full load",
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "Lookup_MAX_Value",
 						"dependencyConditions": [
 							"Succeeded"
 						]
