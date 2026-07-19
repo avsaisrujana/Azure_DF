@@ -58,19 +58,31 @@
 									"referenceName": "PL_CHILDPIPELINE_INCREMENTAL",
 									"type": "PipelineReference"
 								},
-								"waitOnCompletion": true,
-								"parameters": {
-									"TableSchema": "@item().TableSchema",
-									"TableName": "@item().TableName",
-									"WatermarkColumn": "@item().WatermarkColumn",
-									"LastLoadValue": "@item().LastLoadValue"
-								}
+								"waitOnCompletion": true
 							}
 						}
 					]
 				}
 			}
 		],
+		"parameters": {
+			"TableSchema": {
+				"type": "string",
+				"defaultValue": "@item.TableSchema"
+			},
+			"TableName": {
+				"type": "string",
+				"defaultValue": "@item.TableName"
+			},
+			"WatermarkColumn": {
+				"type": "string",
+				"defaultValue": "@item.WatermarkColumn"
+			},
+			"LastLoadValue": {
+				"type": "string",
+				"defaultValue": "@item.LastLoadValue"
+			}
+		},
 		"annotations": []
 	}
 }
