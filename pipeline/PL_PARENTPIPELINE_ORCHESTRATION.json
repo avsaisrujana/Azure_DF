@@ -1,5 +1,5 @@
 {
-	"name": "PL_PARENTPIPELINE",
+	"name": "PL_PARENTPIPELINE_ORCHESTRATION",
 	"properties": {
 		"activities": [
 			{
@@ -55,7 +55,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "PL_CHILDPIPELINE",
+									"referenceName": "PL_CHILDPIPELINE_INCREMENTAL",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true

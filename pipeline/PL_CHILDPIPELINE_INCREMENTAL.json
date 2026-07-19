@@ -1,5 +1,5 @@
 {
-	"name": "PL_CHILDPIPELINE",
+	"name": "PL_CHILDPIPELINE_INCREMENTAL",
 	"properties": {
 		"activities": [
 			{
