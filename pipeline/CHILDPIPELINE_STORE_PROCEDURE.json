@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Stored procedure1",
+				"name": "SP_UPDATE_WTRMRK",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [],
 				"policy": {
@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateWatermark]"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_OnPrem_SQLServer_DW",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"parameters": {
