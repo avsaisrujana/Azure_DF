@@ -37,7 +37,8 @@
 								"type": "Expression"
 							}
 						}
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
@@ -151,9 +152,18 @@
 								},
 								"waitOnCompletion": true,
 								"parameters": {
-									"TableSchema": "@pipeline().parameters.TableSchema",
-									"TableName": "@pipeline().parameters.TableName",
-									"WatermarkColumn": "@pipeline().parameters.WatermarkColumn"
+									"TableSchema": {
+										"value": "@pipeline().parameters.TableSchema",
+										"type": "Expression"
+									},
+									"TableName": {
+										"value": "@pipeline().parameters.TableName",
+										"type": "Expression"
+									},
+									"WatermarkColumn": {
+										"value": "@pipeline().parameters.WatermarkColumn",
+										"type": "Expression"
+									}
 								}
 							}
 						}
