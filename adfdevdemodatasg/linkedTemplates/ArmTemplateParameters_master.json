@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevdemodatasg"
+		},
+		"ADLS_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"LS_OnPrem_SQLServer_DW_password": {
+			"value": ""
+		},
+		"LS_Parent_SqlServer_DW_password": {
+			"value": ""
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adfstoragesg1.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultsqlsg01.vault.azure.net/"
+		},
+		"LS_OnPrem_SQLServer_DW_properties_typeProperties_server": {
+			"value": "Dell-Latitude-7310\\SQLEXPRESS"
+		},
+		"LS_OnPrem_SQLServer_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_OnPrem_SQLServer_DW_properties_typeProperties_userName": {
+			"value": "srujana"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_server": {
+			"value": "Dell-Latitude-7310\\SQLEXPRESS"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_userName": {
+			"value": "srujana"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "test11"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "adv"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "visionboard"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
